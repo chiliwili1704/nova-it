@@ -298,3 +298,5 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node,Angular,WebStorm,Intellij
+.angular/
+package-lock.json
