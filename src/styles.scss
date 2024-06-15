@@ -7,7 +7,8 @@ $gutter: 1rem; //for primeflex grid system
 @import "../node_modules/quill/dist/quill.snow.css";
 //Nova iconos
 @import "assets/icon/nova/icons";
-
+/*Estado de tickets*/
+@import "assets/style/ticket-estado";
 :root {
   --surface-ground: #dfe3e8
 }

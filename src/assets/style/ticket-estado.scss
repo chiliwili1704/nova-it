@@ -1,0 +1,20 @@
+.estado {
+  border-radius: var(--border-radius);
+  padding: .25em .5rem;
+  font-size: 12px;
+
+  &.abierto {
+    background-color: var(--green-500);
+    color: white;
+  }
+
+  &.cerrado {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+  }
+
+  &.pendiente {
+    background-color: var(--yellow-300);
+    color: black;
+  }
+}
