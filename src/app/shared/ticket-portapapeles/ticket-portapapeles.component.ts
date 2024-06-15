@@ -4,7 +4,7 @@ import {TooltipModule} from "primeng/tooltip";
 import {Ticket} from "@nova/modelo";
 import {NgClass} from "@angular/common";
 import {PortapapelesService} from "./portapapeles.service";
-import {formatearTicket} from "./util";
+import {TicketUtil} from "@nova/ticket.util";
 
 @Component({
    selector: 'app-ticket-portapapeles',
@@ -16,9 +16,11 @@ import {formatearTicket} from "./util";
 export class TicketPortapapelesComponent {
    @Input() data: Ticket
    @Input() dynamic: boolean
+
    constructor(private copiarService: PortapapelesService) {
    }
+
    copiar() {
-      this.copiarService.copiarTextoAlPortapapeles(formatearTicket(this.data))
+      this.copiarService.copiarTextoAlPortapapeles(TicketUtil.formatearTicket(this.data))
    }
 }
