@@ -1,0 +1,12 @@
+<div class="surface-100 flex flex-column align-items-center p-4 border-round border-top-2 border-bluegray-600">
+    <div class="border-bottom-1 w-3rem text-color-secondary"></div>
+    <div class="font-bold mt-3">REPORTE | {{ ticket.reporte.area.nombre.toUpperCase() }}</div>
+    <div>{{ ticket.reporte.nombre }}</div>
+    <div class="text-red-600 font-bold mt-3">{{ ticket.folio }}</div>
+    <div>{{ ticket.estado.nombre }}</div>
+    <div class="font-bold mt-3">{{ ticket.unidad.clave }} {{ ticket.unidad.nombre }}</div>
+    @if (ticket.agente) {
+        <div>{{ ticket.agente }}</div>
+    }
+    <div class="text-color-secondary text-sm mt-5">Creado el {{ ticket.fecha }}</div>
+</div>
