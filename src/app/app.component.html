@@ -1,1 +1,6 @@
-<router-outlet />
+@if (isLoading) {
+    <app-spinner [modal]="true" mensaje="Iniciando módulo"></app-spinner>
+}
+@if (!isLoading) {
+    <router-outlet></router-outlet>
+}
